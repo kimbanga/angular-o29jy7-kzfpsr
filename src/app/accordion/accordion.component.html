@@ -1,0 +1,9 @@
+acc<p-accordion expandIcon="pi pi-fw pi-plus" collapseIcon="pi pi-fw pi-minus">
+	<ng-container #fieldComponent></ng-container>
+	<ng-container *ngFor="let tab of field.fieldGroup; let index = index; let last = last;">
+		<p-accordionTab [header]="tab.templateOptions.header" [selected]="tab.templateOptions.selected || false"
+			[disabled]="tab.templateOptions.accordionDisabled">
+			<formly-field [field]="tab"></formly-field>
+		</p-accordionTab>
+	</ng-container>
+</p-accordion>

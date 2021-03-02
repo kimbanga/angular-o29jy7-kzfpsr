@@ -1,0 +1,68 @@
+@import "~primeng/resources/primeng.min.css";
+@import "~primeng/resources/themes/bootstrap/theme.css";
+@import "bootstrap-variables";
+// Import Bootstrap source files from node_modules
+@import "~bootstrap/scss/bootstrap";
+
+/* jhipster-needle-scss-add-vendor JHipster will add new css style */
+
+body {
+  padding: 10px;
+}
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+/**  Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license */
+
+/* Accordion styles */
+
+body .ui-accordion .ui-accordion-header a {
+  padding: 16px;
+}
+
+.ui-accordion .ui-accordion-header {
+  background-color: #eee;
+  border: none;
+  color: #000000;
+}
+
+.ui-accordion .ui-accordion-header a {
+  color: #000000;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  border: none;
+}
+
+.ui-accordion .ui-accordion-header a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+}
+
+.p-accordion
+  .p-accordion-header:not(.p-disabled)
+  .p-accordion-header-link:focus {
+  border: none;
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0;
+}
+
+body
+  .ui-accordion
+  .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover {
+  background-color: #006341;
+  color: #ffffff;
+}
+
+body .ui-accordion .ui-accordion-header.ui-state-active {
+  background-color: #006341;
+  color: #fff;
+  border: none;
+}
+
+.ui-accordion .ui-accordion-toggle-icon {
+  vertical-align: middle;
+  margin-right: 16px;
+}
